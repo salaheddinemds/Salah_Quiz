@@ -35,7 +35,7 @@ export const translations = {
     questionsAnswered: 'Questions Answered',
     averageScore: 'Average Score',
     aboutMeTitle: 'About Developer',
-    aboutMeDescription: 'Hi, I\'m Salah Eddine Mds, a passionate developer dedicated to creating educational Islamic content.',
+    aboutMeDescription: 'Hi, I\'m Salah Eddine Mendas, a passionate developer dedicated to creating educational Islamic content.',
     missionTitle: 'Our Mission',
     missionDescription: 'To provide accessible, accurate, and engaging Islamic education through modern technology.',
     contactTitle: 'Contact Us',
