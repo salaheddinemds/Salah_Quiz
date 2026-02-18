@@ -202,7 +202,7 @@ Add questions directly in [src/data/sampleQuizData.ts](src/data/sampleQuizData.t
 
 ## License
 
-All rights reserved © 2024 الصلاح Quiz
+All rights reserved © 2026 الصلاح Quiz
 
 ---
 
