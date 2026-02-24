@@ -1,4 +1,4 @@
-import { BookOpen, BookText, Users, MessageSquare } from 'lucide-react';
+import { BookOpen, BookText, Users, MessageSquare, FileText } from 'lucide-react';
 import { Hero } from '../components/home/Hero';
 import { CategoryCard } from '../components/home/CategoryCard';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -46,17 +46,17 @@ export const Home = ({ onStartQuiz }: HomeProps) => {
        descriptionAr: 'المصطلحات والمفاهيم الإسلامية',
        icon: MessageSquare,
        category: 'meanings' as QuizCategory,
-       questionsCount: 30,
+       questionsCount: 12,
      },
-    // {
-    //   title: 'General Knowledge',
-    //   titleAr: 'المعرفة العامة',
-    //   description: 'General Islamic knowledge',
-    //   descriptionAr: 'المعرفة الإسلامية العامة',
-    //   icon: FileText,
-    //   category: 'general' as QuizCategory,
-    //   questionsCount: 45,
-    // },
+     {
+       title: 'General Knowledge',
+       titleAr: 'المعرفة العامة',
+       description: 'General Islamic knowledge',
+       descriptionAr: 'المعرفة الإسلامية العامة',
+       icon: FileText,
+       category: 'general' as QuizCategory,
+       questionsCount: 7,
+     },
   ];
 
   const scrollToCategories = () => {

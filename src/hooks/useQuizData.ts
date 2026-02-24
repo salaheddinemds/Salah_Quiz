@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { QuizQuestion, QuizCategory } from '../types';
 import {
-  // generalQuestions,
+  generalQuestions,
   meaningsQuestions,
   prophetsQuestions,
   quranQuestions,
@@ -13,7 +13,7 @@ const questionBank: Record<QuizCategory, QuizQuestion[]> = {
   sunnah: sunnahQuestions,
   prophets: prophetsQuestions,
   meanings: meaningsQuestions,
-  // general: generalQuestions,
+  general: generalQuestions,
 } as Record<QuizCategory, QuizQuestion[]>;
 
 export const useQuizData = (category: QuizCategory | null) => {
