@@ -1,4 +1,4 @@
-import { BookOpen, BookText } from 'lucide-react';
+import { BookOpen, BookText, Users, MessageSquare } from 'lucide-react';
 import { Hero } from '../components/home/Hero';
 import { CategoryCard } from '../components/home/CategoryCard';
 import { useLanguage } from '../contexts/LanguageContext';
@@ -30,24 +30,24 @@ export const Home = ({ onStartQuiz }: HomeProps) => {
       category: 'sunnah' as QuizCategory,
       questionsCount: 10,
     },
-    // {
-    //   title: 'Prophets Stories',
-    //   titleAr: 'قصص الأنبياء',
-    //   description: 'Stories and lessons from the Prophets',
-    //   descriptionAr: 'قصص ودروس من الأنبياء والمرسلين',
-    //   icon: Users,
-    //   category: 'prophets' as QuizCategory,
-    //   questionsCount: 5,
-    // },
-    // {
-    //   title: 'Islamic Meanings',
-    //   titleAr: 'المعاني الإسلامية',
-    //   description: 'Islamic terms and concepts',
-    //   descriptionAr: 'المصطلحات والمفاهيم الإسلامية',
-    //   icon: MessageSquare,
-    //   category: 'meanings' as QuizCategory,
-    //   questionsCount: 30,
-    // },
+    {
+      title: 'Prophets Stories',
+      titleAr: 'قصص الأنبياء',
+      description: 'Stories and lessons from the Prophets',
+      descriptionAr: 'قصص ودروس من الأنبياء والمرسلين',
+      icon: Users,
+      category: 'prophets' as QuizCategory,
+      questionsCount: 15,
+    },
+     {
+       title: 'Islamic Meanings',
+       titleAr: 'المعاني الإسلامية',
+       description: 'Islamic terms and concepts',
+       descriptionAr: 'المصطلحات والمفاهيم الإسلامية',
+       icon: MessageSquare,
+       category: 'meanings' as QuizCategory,
+       questionsCount: 30,
+     },
     // {
     //   title: 'General Knowledge',
     //   titleAr: 'المعرفة العامة',

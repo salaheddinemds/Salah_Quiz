@@ -2,8 +2,8 @@ import { useState, useEffect } from 'react';
 import { QuizQuestion, QuizCategory } from '../types';
 import {
   // generalQuestions,
-  // meaningsQuestions,
-  // prophetsQuestions,
+  meaningsQuestions,
+  prophetsQuestions,
   quranQuestions,
   sunnahQuestions,
 } from '../data/sampleQuizData';
@@ -11,8 +11,8 @@ import {
 const questionBank: Record<QuizCategory, QuizQuestion[]> = {
   quran: quranQuestions,
   sunnah: sunnahQuestions,
-  // prophets: prophetsQuestions,
-  // meanings: meaningsQuestions,
+  prophets: prophetsQuestions,
+  meanings: meaningsQuestions,
   // general: generalQuestions,
 } as Record<QuizCategory, QuizQuestion[]>;
 
