@@ -55,7 +55,7 @@ export const Home = ({ onStartQuiz }: HomeProps) => {
        descriptionAr: 'المعرفة الإسلامية العامة',
        icon: FileText,
        category: 'general' as QuizCategory,
-       questionsCount: 7,
+       questionsCount: 12,
      },
   ];
 
