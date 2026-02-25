@@ -12,6 +12,7 @@ export const Footer = ({ onNavigate }: FooterProps) => {
     'home',
     'quranQuiz',
     'sunnahQuiz',
+    'kisasWaEibar',
     'aboutMe',
     'contact',
   ] as const;

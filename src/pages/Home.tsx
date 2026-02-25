@@ -1,15 +1,18 @@
-import { BookOpen, BookText, Users, MessageSquare, FileText } from 'lucide-react';
+import { BookOpen, BookText, Users, MessageSquare, FileText, ScrollText } from 'lucide-react';
 import { Hero } from '../components/home/Hero';
 import { CategoryCard } from '../components/home/CategoryCard';
+import { Card } from '../components/ui/Card';
+import { Button } from '../components/ui/Button';
 import { useLanguage } from '../contexts/LanguageContext';
 import { QuizCategory } from '../types';
 
 interface HomeProps {
   onStartQuiz: (category: QuizCategory) => void;
+  onOpenKisasWaEibar: () => void;
 }
 
-export const Home = ({ onStartQuiz }: HomeProps) => {
-  const { t } = useLanguage();
+export const Home = ({ onStartQuiz, onOpenKisasWaEibar }: HomeProps) => {
+  const { t, language } = useLanguage();
 
   const categories = [
     {
@@ -81,6 +84,32 @@ export const Home = ({ onStartQuiz }: HomeProps) => {
               onStart={onStartQuiz}
             />
           ))}
+
+          <Card hover className="p-6 h-full flex flex-col">
+            <div className="flex items-center gap-4 mb-4">
+              <div className="p-3 bg-gradient-to-br from-emerald-500 to-teal-500 rounded-xl text-white">
+                <ScrollText className="w-8 h-8" />
+              </div>
+              <div className="flex-1">
+                <h3 className="text-xl font-bold text-gray-900 dark:text-gray-100">
+                  {language === 'ar' ? 'قصص وعبر' : 'Stories and Lessons'}
+                </h3>
+                <p className="text-sm text-gray-500 dark:text-gray-400">
+                  {language === 'ar' ? '4 قصص' : '4 Stories'}
+                </p>
+              </div>
+            </div>
+
+            <p className="text-gray-600 dark:text-gray-300 mb-6 flex-1 leading-relaxed">
+              {language === 'ar'
+                ? 'قصص إسلامية قصيرة مع حكم وعبر نافعة'
+                : 'Short Islamic stories with practical wisdom and reflections'}
+            </p>
+
+            <Button onClick={onOpenKisasWaEibar} className="w-full">
+              {t('openSection')}
+            </Button>
+          </Card>
         </div>
       </div>
     </div>

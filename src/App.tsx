@@ -6,11 +6,12 @@ import { Home } from './pages/Home';
 import { QuizPage } from './pages/QuizPage';
 import { AboutMe } from './pages/AboutMe';
 import { Contact } from './pages/Contact';
+import { KisasWaEibar } from './pages/KisasWaEibar';
 import { useQuizData } from './hooks/useQuizData';
 import { QuizCategory } from './types';
 import { useLanguage } from './contexts/LanguageContext';
 
-type Page = 'home' | 'quranQuiz' | 'sunnahQuiz' | 'prophetsQuiz' | 'meaningsQuiz' | 'generalKnowledge' | 'aboutMe' | 'contact' | 'quiz';
+type Page = 'home' | 'quranQuiz' | 'sunnahQuiz' | 'prophetsQuiz' | 'meaningsQuiz' | 'generalKnowledge' | 'kisasWaEibar' | 'aboutMe' | 'contact' | 'quiz';
 
 const AppContent = () => {
   const [currentPage, setCurrentPage] = useState<Page>('home');
@@ -26,6 +27,7 @@ const AppContent = () => {
       prophetsQuiz: { page: 'quiz', category: 'prophets' },
       meaningsQuiz: { page: 'quiz', category: 'meanings' },
       generalKnowledge: { page: 'quiz', category: 'general' },
+      kisasWaEibar: { page: 'kisasWaEibar' },
       aboutMe: { page: 'aboutMe' },
       contact: { page: 'contact' },
     };
@@ -54,7 +56,7 @@ const AppContent = () => {
 
   const renderPage = () => {
     if (currentPage === 'home') {
-      return <Home onStartQuiz={handleStartQuiz} />;
+      return <Home onStartQuiz={handleStartQuiz} onOpenKisasWaEibar={() => handleNavigate('kisasWaEibar')} />;
     }
 
     if (currentPage === 'quiz' && currentCategory) {
@@ -91,11 +93,15 @@ const AppContent = () => {
       return <AboutMe />;
     }
 
+    if (currentPage === 'kisasWaEibar') {
+      return <KisasWaEibar />;
+    }
+
     if (currentPage === 'contact') {
       return <Contact />;
     }
 
-    return <Home onStartQuiz={handleStartQuiz} />;
+    return <Home onStartQuiz={handleStartQuiz} onOpenKisasWaEibar={() => handleNavigate('kisasWaEibar')} />;
   };
 
   return (

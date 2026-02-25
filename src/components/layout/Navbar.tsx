@@ -12,6 +12,7 @@ const navItems: NavItem[] = [
   { key: 'quranQuiz', icon: BookOpen },
   { key: 'sunnahQuiz', icon: BookText },
   { key: 'prophetsQuiz', icon: Users },
+  { key: 'kisasWaEibar', icon: MessageSquare },
   { key: 'meaningsQuiz', icon: MessageSquare },
   { key: 'generalKnowledge', icon: FileText },
   { key: 'aboutMe', icon: User },
