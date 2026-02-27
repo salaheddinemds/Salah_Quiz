@@ -40,7 +40,7 @@ const stories: StoryItem[] = [
     story:
       'After Musa عليه السلام left briefly to receive revelation, Al-Samiri exploited his absence, collected gold, and made a calf to mislead people into worshiping it. When Musa returned, he confronted Al-Samiri, clarified the truth to Bani Israel, and called them to repent to Allah.',
     storyAr:
-      'بعد خروج موسى عليه السلام وقومه من مصر، وأثناء غياب موسى عليه السلام لفترة قصيرة لتلقي الوحي من الله على جبل الطور، حاول بعض بني إسرائيل العودة إلى عبادة الأصنام.\n\nاستغل السامري هذا الغياب، فجمع الذهب من الناس وصنع عجلًا من ذهب ليكون لهم إلهاً يُعبد. وأقنع الناس بالاقتراب منه وعبادته، فضلوا عن الطريق المستقيم.\n\nعندما عاد موسى عليه السلام، غضب على السامري وأمره بالعقاب، وأوضح لبني إسرائيل خطأهم وطلب منهم التوبة إلى الله.\n\n«قَالَ فَمَا خَطْبُكَ يَا سَامِرِيُّ قَالَ بَصَرْتُ بِمَا لَمْ يَبْصُرُوا بِهِ فَأَلْقَيْتُهَا فَكَانَتْ أَفْعَالِي» (طه: 96)',
+      'بعد خروج موسى عليه السلام وقومه من مصر، وأثناء غياب موسى عليه السلام لفترة قصيرة لتلقي الوحي من الله على جبل الطور، حاول بعض بني إسرائيل العودة إلى عبادة الأصنام.\n\nاستغل السامري هذا الغياب، فجمع الذهب من الناس وصنع عجلًا من ذهب ليكون لهم إلهاً يُعبد. وأقنع الناس بالاقتراب منه وعبادته، فضلوا عن الطريق المستقيم.\n\nعندما عاد موسى عليه السلام، غضب على السامري وأمره بالعقاب، وأوضح لبني إسرائيل خطأهم وطلب منهم التوبة إلى الله.\n\n«قَالَ بَصُرْتُ بِمَا لَمْ يَبْصُرُوا بِهِ فَقَبَضْتُ قَبْضَةً مِّنْ أَثَرِ الرَّسُولِ فَنَبَذْتُهَا وَكَذَٰلِكَ سَوَّلَتْ لِي نَفْسِي (طه: 96)',
     wisdom:
       'Lessons:\n\nStaying away from misguidance.\nDeception never succeeds before Allah.\nPatience and steadfastness upon truth.\nThe door of repentance is always open.\nWorship belongs to Allah alone.',
     wisdomAr:
